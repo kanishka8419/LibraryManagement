@@ -1,3 +1,9 @@
+About:
+The Library Management System (LMS) is implemented as a smart contract on the Ethereum blockchain using Solidity.
+It enables a librarian (admin) to manage books — adding, updating, and removing them — while users (readers) can borrow and return books securely.
+
+Each transaction (like borrowing or returning a book) is permanently recorded on the blockchain, ensuring transparency and accountability.
+
 🧠 Features
 
 👑 Owner-controlled: Only the contract owner can add new books.
@@ -14,6 +20,15 @@ addBook(string title, string author, uint256 copies)	Add a new book to the libra
 borrowBook(uint256 bookId)	Borrow a book if available	Any user
 returnBook(uint256 bookId)	Return a borrowed book	Any user
 getBook(uint256 bookId)	Get details of a specific book	Public view
+
+🧑‍💻 Roles:
+1)Librarian (Admin):
+  >Adds or removes books.
+  >Monitors borrowing records.
+2)User (Member):
+  >Can view all available books.
+  >Can borrow and return books.
+
 ⚙️ How to Run
 1. Open in Remix
 
@@ -52,3 +67,6 @@ Call returnBook(1) — returns that book.
 
 Call getBook(1) — views book details.
 <img width="1920" height="1080" alt="Screenshot (145)" src="https://github.com/user-attachments/assets/38b0b46f-b6d9-4b98-bd8f-e3bfbf8f87d1" />
+
+Contract address:
+0x4255eb59fc63bbe3f0b6cc395bf1ba83dd745210
